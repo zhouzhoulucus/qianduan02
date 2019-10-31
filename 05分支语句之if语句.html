@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+
+    // 如果这样写 上面和下面不是一块的哦
+    //    if()
+    //    {
+    //
+    //    }
+
+    // 正确的if语句书写方式是
+    // 如下图这样写的哦
+    //    if(){
+    //
+    //    }
+
+    //    var age = prompt("请您输入年龄");
+    //    if(age > 18){
+    //        console.log("可以看电影了");
+    //    }else{
+    //        console.log("不能看电影了");
+    //    }
+
+    // 输入一个数字 判断是奇数还是偶数
+    //    var num = parseInt(prompt("请输入一个数字:"));
+    //    if(num%2 ==0){
+    //        console.log("偶数");
+    //    }else{
+    //        console.log("奇数");
+    //    }
+
+    // 三元表示
+    //    var num1 = 10;
+    //    var num2 = 20;
+    //    console.log(num1 > num2 ? true : false)
+
+    var score = Number(prompt("请输入您的成绩"));
+    if (!isNaN(score)) {
+        if (score >= 90 && score <= 100) {
+            console.log("A");
+        } else if (score >= 80) {
+            console.log("B");
+        } else if (score >= 70) {
+            console.log("C");
+        } else if (score >= 60) {
+            console.log("D");
+        } else {
+            console.log("不及格");
+        }
+    } else {
+        console.log("您输入有误")
+    }
+
+</script>
+</body>
+</html>

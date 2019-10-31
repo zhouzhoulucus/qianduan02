@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    /**
+     * swtich-case 语句中 和 case后面的值比较的时候 使用的是严格的模式
+     * @type {string}
+     */
+    //    var JiBie = "E";
+    //    switch (JiBie) {
+    //        case "A":
+    //            console.log("90到100之间");
+    //            break;
+    //        case "B":
+    //            console.log("80到90之间");
+    //            break;
+    //        case "C":
+    //            console.log("70到80之间");
+    //            break;
+    //        case "D":
+    //            console.log("60到70之间");
+    //            break;
+    //        default:
+    //            console.log("不及格");
+    //            break;
+    //    }
+
+    var month = parseInt(prompt("请输入月份"));
+    switch (month){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:console.log("这个月有31天");break;
+        case 2:console.log("这个月有28天");break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:console.log("这个月有30天");break;
+    }
+
+</script>
+</body>
+</html>
