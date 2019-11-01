@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+
+    // 函数需要首先定义 然后调用
+    // 函数重名会造成函数的覆盖
+    function f1(){
+        console.log("小苏好帅呀")
+    }
+
+    function f1(){
+        console.log("小杨好帅呀")
+    }
+
+    f1();
+
+    // 一个函数最好就是一个功能
+
+   function consoleSum(){
+       // 求三个数字的最大值
+       var x = 10;
+       var y = 20;
+       var z = 30;
+       // 嵌套三元表达式
+       var max = x>y?(x>z?x:z):(y>z?y:z);
+       console.log(max)
+   }
+
+    consoleSum();
+</script>
+</body>
+</html>

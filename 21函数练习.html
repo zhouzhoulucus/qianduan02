@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    // 求一个数组中最大值和最小值还有和
+    // 在js中 可以直接定义这样类型的参数,并且返回的
+    /**
+     * 数组是可以作为参数的,并且数组是可以作为函数的返回值的
+     * @param arr
+     * @returns {*[]}
+     */
+    function complexCompute(arr){
+        var max=arr[0];
+        var min=arr[0];
+        for(var i=0;i<arr.length;i++){
+            if(max < arr[i]){
+                max = arr[i];
+            }
+            if(min > arr[i]){
+                min = arr[i];
+            }
+        }
+        // 在js中可以直接这样返回数组,在java也可以返回list 还有数组 不过格式不是这样的
+        return [max,min,max+min];
+    }
+
+    console.log(complexCompute([3,4,5,1,2,3,32,55,5,7,8,-1]))
+
+
+</script>
+</body>
+</html>
