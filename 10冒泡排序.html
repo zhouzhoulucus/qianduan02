@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<script>
+    var arr = [30, 20, 10, 0, 50, -10, 90, 40];
+    // 比较轮数
+    for(var i=0;i<arr.length-1;i++){
+        // 每一轮里面比较的次数
+        for(var j=0;j<arr.length-1-i;j++){
+            // 进行判断
+            if(arr[j] > arr[j+1]){
+                var temp;
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+    console.log(arr);
+</script>
+</body>
+</html>
