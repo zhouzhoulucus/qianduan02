@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    var arr = [30, 20, 10, 0, 50, -10, 90, 40];
+    // 1.求数组中所有元素的和
+    //    var sum = 0;
+    //    for(var i=0;i<arr.length;i++){
+    //        sum += arr[i];
+    //    }
+    //    console.log(sum);
+
+
+    //2. 求数组中所有元素的平均值
+    //    var sum = 0;
+    //    for (var i = 0; i < arr.length; i++) {
+    //        sum += arr[i];
+    //    }
+    //    console.log("平均值是: " + sum / arr.length)
+
+    //3.求数组中所有元素的最大值
+    //    var max = 0;
+    //    for (var i = 0; i < arr.length; i++) {
+    //        if (max < arr[i]) {
+    //            max = arr[i];
+    //        }
+    //    }
+    //    console.log(max);
+
+    //4. 求数组中所有元素的最小值
+    //    var min = 0;
+    //    var min =arr[arr.random()-1];
+    //    for (var i = 0; i < arr.length; i++) {
+    //        if (min > arr[i]) {
+    //            min = arr[i];
+    //        }
+    //    }
+    //    console.log(min);
+
+
+    // 5.倒循环遍历数组
+    //        for(var i=(arr.length-1);i>=0;i--){
+    //            console.log(arr[i]);
+    //        }
+
+    // 6. 把数组中的所有元素使用 \ 拼接到一起产生一个字符串并输出
+    //    var str = "";
+    //    for (var i = 0; i < arr.length; i++) {
+    //        str += arr[i] + "|";
+    //    }
+    //    console.log(str);
+
+
+    // 7. 去掉数组中重复的0
+    //    var arr1 = [];
+    //    for (var i = 0; i < arr.length; i++) {
+    //        if (arr[i] != 0) {
+    //            arr1[arr1.length] = arr[i];
+    //        }
+    //    }
+    //    console.log(arr1);
+
+
+    // 8.数组反转 -- 理解流程图 就能很轻易的将结果计算出来
+    //    console.log(arr.reverse());
+    //    console.log(parseInt(5/2));
+    //    for(var i=0;i<parseInt(arr.length/2);i++){
+    //
+    //        var temp;
+    //        // 第一步,先将 数组前面的数字放到temp容器中
+    //        temp = arr[i];
+    //        // 第二步, 然后将数组后面的值 放到数组前面
+    //        arr[i] = arr[arr.length-1-i];
+    //        // 第三步,将temp容器里面的值 放到数组后面
+    //        arr[arr.length-1-i] = temp;
+    //    }
+    //    console.log(arr);
+
+    // 9.提示用户输入班级人数,求总成绩,平均值,最高分 最低分
+    // 提示用户输入班级人数
+    var perCount = parseInt(prompt("请输入班级人数"));
+    // 创建一个数组保存同学的成绩
+    var scores = [];
+    // 使用一个for循环逐个接受班级同学的成绩
+    for(var i=0;i<perCount;i++){
+        scores[scores.length] = parseInt(prompt("请输入第个"+(i+1)+"人的成绩:"));
+    }
+
+    // 求总成绩
+    var scoreSum = 0;
+    for(var i=0;i<scores.length;i++){
+        scoreSum += scores[i];
+    }
+    console.log("总成绩是:"+ scoreSum);
+    // 求平均值
+    console.log("平均成绩是: "+ scoreSum/arr.length);
+    // 求最高分
+    var max = scores[0];
+    for(var i=0;i<scores.length;i++){
+        if(max < scores[i]){
+            max = scores[i];
+        }
+    }
+    console.log("最大成绩是: "+max);
+    // 求最低分
+    var min = scores[0];
+    for(var i=0;i<scores.length;i++){
+        if(min > scores[i]){
+            min = scores[i];
+        }
+    }
+    console.log("最小成绩是: "+ min);
+
+
+
+
+
+</script>
+</body>
+</html>
